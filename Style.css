@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  height: 90vh;
+  max-height: 700px;
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-hero.jpg?raw=true");
+}
+
+.hero__headercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.hero__nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.hero__box {
+  margin-top: 100px;
+  border: 1px solid white;
+  padding: 30px;
+  max-width: 500px;
+  font-weight: 300;
+  font-size: 2.9rem;
+  color: white;
+  line-height: 1.2;
+}
+
+.leader {
+  padding: 80px 0;
+}
+
+.leader__container {
+  position: relative;
+}
+
+.leader__info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 600px;
+  padding: 70px 70px 0 70px;
+}
+
+.leader__info h2 {
+  font-weight: 300;
+  font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.creations {
+  padding: 80px 0;
+}
+
+.creations__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.creations__header a {
+  border: 1px solid black;
+  padding: 5px 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.creations__header h2 {
+  font-weight: 300;
+  font-size: 2.1rem;
+}
+
+.creations__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.creations__grid .grid__item {
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.creations__grid .grid__item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.creations__grid .grid__item h3 {
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+}
+/* div {
+  display: flex;
+} */
+.grid-container {
+  display: grid;
+  grid-row: auto;
+  grid-gap: 2rem;
+  margin-bottom: 3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.grid__item h3 {
+  padding: 5.25rem 0 0 2.05rem;
+  font-size: 2.35rem;
+  width: 14rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #ffffff;
+}
+.deep-earth {
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-deep-earth.jpg?raw=true");
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .deep-earth {
+    background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-deep-earth.jpg?raw=true");
+    background-size: cover;
+  }
+}
+
+.night-arcade {
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-night-arcade.jpg?raw=true");
+  background-size: cover;
+}
+
+.soccer-team {
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-soccer-team.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.the-grid {
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-grid.jpg?raw=true");
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .the-grid {
+    /* background-image: url(""); */
+    /* background-size: cover; */
+    background-position: top;
+  }
+}
+
+.up-above {
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-from-above.jpg?raw=true");
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .up-above {
+    /* background-image: url("/images/desktop/image-from-above.jpg"); */
+    background-size: cover;
+  }
+}
+
+.pocket-borealis {
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-pocket-borealis.jpg?raw=true");
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .pocket-borealis {
+    /* background-image: url("/images/desktop/image-pocket-borealis.jpg"); */
+    background-size: cover;
+  }
+}
+
+.curiosity {
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-curiosity.jpg?raw=true");
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .curiosity {
+    /* background-image: url("/images/desktop/image-curiosity.jpg"); */
+    background-size: cover;
+  }
+}
+
+.fisheye {
+  background-image: url("https://github.com/AndyBeable/loop-studios/blob/master/images/desktop/image-fisheye.jpg?raw=true");
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .fisheye {
+    /* background-image: url("/images/desktop/image-fisheye.jpg"); */
+    background-size: cover;
+  }
+}
+.foot {
+  height: 200px;
+  width: 100%;
+  background-color: black;
+}
+.foot__headercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.foot__note {
+  padding: 15px 0;
+}
+.foot__notecontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot__note p {
+  color: white;
+}
+.foot__nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+}
+.foot__icons {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
